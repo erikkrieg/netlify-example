@@ -60,3 +60,6 @@ typings/
 # Output of gatsby build
 .cache/
 public/
+
+# Editor configuration
+.vscode/
