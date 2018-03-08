@@ -1,0 +1,18 @@
+{
+  "name": "netlify-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:erikkrieg/netlify-example.git",
+  "author": "Erik Krieg <erik.c.krieg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby-cli": "^1.1.45",
+    "gatsby": "^1.9.223",
+    "gatsby-link": "^1.6.38"
+  }
+}
