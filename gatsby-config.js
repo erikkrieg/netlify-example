@@ -8,6 +8,12 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
-    'gatsby-plugin-netlify-cms', // The Netlify plugin should be last in the array
+    // The Netlify plugin should be last in the array
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/index.js`,
+      },
+    },
   ],
 };
