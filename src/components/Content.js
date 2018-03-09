@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-export default { content } => (
+export default ({ content }) => (
   <Fragment>
     {typeof content === 'string' ? (
       <div dangerouslySetInnerHTML={{ __html: content }} />
