@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: erikkrieg/netlify-example
+
+media_folder: static/assets
+
+collections:
+  - name: decision-tree
+    label: Decision Tree
+    folder: decision-tree
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
