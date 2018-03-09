@@ -1,10 +1,11 @@
 import React from 'react'
+import Content from '../components/Content'
 
 export const TopicPageTemplate = ({ title, content }) => (
   <div>
     <h1>Topic Page Template</h1>
     <h2>{title}</h2>
-    <div dangerouslySetInnerHTML={{ __html: content }} />
+    <Content content={content} />
   </div>
 )
 
