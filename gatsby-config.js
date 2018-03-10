@@ -8,6 +8,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-react-helmet',
     // The Netlify plugin should be last in the array
     {
       resolve: 'gatsby-plugin-netlify-cms',

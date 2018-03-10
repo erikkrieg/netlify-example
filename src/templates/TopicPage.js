@@ -1,8 +1,10 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Content from '../components/Content'
 
 export const TopicPageTemplate = ({ title, topics }) => (
   <main>
+    <Helmet title={`${title} | Prodigy Game`} />
     <header>
       <h1>{title}</h1>
       <a href="/">Back... 💫</a>
