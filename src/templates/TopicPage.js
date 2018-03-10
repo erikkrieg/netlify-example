@@ -2,16 +2,17 @@ import React from 'react'
 import Content from '../components/Content'
 
 export const TopicPageTemplate = ({ title, content }) => (
-  <div>
-    <h1>Topic Page Template</h1>
-    <h2>{title}</h2>
-    <Content content={content} />
-  </div>
+  <main>
+    <header>
+      <h1>{title}</h1>
+      <a href="/">Back... 💫</a>
+    </header>
+  </main>
 )
 
 export default ({ data }) => {
   const { markdownRemark: topic } = data
-
+  console.log(data)
   return (
     <TopicPageTemplate
       title={topic.frontmatter.title}
