@@ -9,7 +9,7 @@ export const TopicPageTemplate = ({ title, topics }) => (
     </header>
     <section>
       <ul>
-        {topics.map(({ text, url }, index) => (
+        {topics && topics.map(({ text, url }, index) => (
           <li key={index}><a href={url}>{text}</a></li>
         ))}
       </ul>
